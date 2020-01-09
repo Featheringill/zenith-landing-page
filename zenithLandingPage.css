@@ -1,0 +1,68 @@
+/* base styles */
+
+ul,
+p {
+  margin: 0;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: #3575c2;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+img {
+  width: 100%;
+}
+
+/* layout styles */
+
+.nav-col {
+  width: 50%;
+}
+.nav-col-list {
+  display: none;
+}
+.nav-col-icon {
+  display: flex;
+  justify-content: flex-end;
+}
+.container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* block styles */
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.nav__logo-wrapper {
+  max-width: 160px;
+}
+
+.nav__menu-icon-wrapper {
+  width: 37px;
+}
+
+.hero {
+}
+
+.features__card {
+  border: dashed orange 2px;
+  display: flex;
+  max-height: 105px;
+}
+
+.features__image {
+}
