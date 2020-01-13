@@ -70,18 +70,18 @@ section {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  /* position: fixed;
+  position: fixed;
   background: #ffffff;
-  width: 100%; */
+  width: 100%;
 }
 
 .nav__logo-wrapper {
   max-width: 160px;
 }
 
-.nav__menu-icon-wrapper {
+/* .nav__menu-icon-wrapper {
   width: 37px;
-}
+} */
 
 .hero {
   height: 100vh;
@@ -105,7 +105,7 @@ section {
   display: flex;
   padding: 26px;
   margin: 21px 0;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .features__description {
@@ -116,6 +116,15 @@ section {
   margin-top: 60px;
 }
 .integrations__logo {
+  width: 100px;
+  height: 100%;
+  margin: 30px;
+}
+.integrations__logo-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 @media (min-width: 600px) {
