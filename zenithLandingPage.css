@@ -1,8 +1,16 @@
 /* base styles */
-
+h1 {
+  margin: 0 15px;
+}
+h2,
+h1 {
+  margin-bottom: 80px;
+  font-family: "Roboto", sans-serif;
+}
 ul,
 p {
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 p {
@@ -14,10 +22,15 @@ a {
   color: #3575c2;
   font-weight: bold;
   font-size: 0.85rem;
+  font-family: "Roboto", sans-serif;
 }
 
 img {
   width: 100%;
+}
+
+section {
+  margin-bottom: 200px;
 }
 
 /* layout styles */
@@ -38,6 +51,18 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+.features-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 2%;
+}
+.integrations__logo-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /* block styles */
 
@@ -45,6 +70,9 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  /* position: fixed;
+  background: #ffffff;
+  width: 100%; */
 }
 
 .nav__logo-wrapper {
@@ -56,13 +84,49 @@ img {
 }
 
 .hero {
-}
-
-.features__card {
-  border: dashed orange 2px;
+  height: 100vh;
+  flex-direction: column;
   display: flex;
-  max-height: 105px;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./images/backgrounds/hero-bg-texture.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.features__image {
+.hero__image {
+}
+
+.features__icon {
+  max-width: 19px;
+}
+.features__feature {
+  display: flex;
+  padding: 26px;
+  margin: 21px 0;
+  justify-content: center;
+  align-items: center;
+}
+.features__description {
+  max-width: 200px;
+  margin-right: 40px;
+}
+.features__dashboard-image-wrapper {
+  margin-top: 60px;
+}
+.integrations__logo {
+}
+
+@media (min-width: 600px) {
+  /* Base */
+
+  /* Layout */
+  .nav-col-icon {
+    display: none;
+  }
+  .nav-col-list {
+    display: block;
+  }
+  /* Blocks */
 }
